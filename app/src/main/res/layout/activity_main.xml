@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.czm.demo.MainActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_main">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="#EE6A5ACD"
+        android:textColor="#FFF"
+        android:text="XCRefreshLayout Demo"/>
+    <com.czm.xcrefreshlayout.XCRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/listview"
+            android:background="#EEAD0E"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </com.czm.xcrefreshlayout.XCRefreshLayout>
+
+</LinearLayout>
